@@ -1,6 +1,6 @@
 # ExSpike: A General Full-Event Neuromorphic Architecture for Exploiting Irregular Sparsity with Event Compression (FPL 2026) 🔥
 
-> Copyright (C) 2020–2022, University of Groningen, the Netherlands.
+> Copyright (C) 2025–2026, University of Groningen, the Netherlands.
 
 > The digital HDL source code of ExSpike is released under the Solderpad Hardware License, Version 2.0, which extends the Apache License 2.0 for hardware use. You may redistribute and/or modify the HDL source code under the terms of this license.
 
