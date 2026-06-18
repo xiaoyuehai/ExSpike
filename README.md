@@ -1,4 +1,4 @@
-# ExSpike: A General Full-Event Neuromorphic Architecture for Exploiting Irregular Sparsity with Event Compression (FPL 2026) 🔥
+# ExSpike: A General Full-Event Neuromorphic Architecture for Exploiting Irregular Sparsity with Event Compression (FPL 2026)
 
 > Copyright (C) 2025–2026, University of Groningen, the Netherlands.
 
