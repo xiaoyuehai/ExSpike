@@ -9,7 +9,7 @@
 # 📖 Repository Introduction
 
 ```
-ExSpike 🔥🔥🔥
+ExSpike 🔥
     --AE_scripts  // automated scripts for artifact generation
     --Artifacts   // output of artifacts
     --cycle_model // cycle-level execution model for ExSpike
