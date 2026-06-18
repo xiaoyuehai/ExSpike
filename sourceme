@@ -1,0 +1,34 @@
+export ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export CYCLE_MODEL=$ROOT_DIR/cycle_model
+export HW_IMPLE=$ROOT_DIR/HW
+export POWER=$ROOT_DIR/Power_estimation
+export RTL=$ROOT_DIR/rtl
+export SIM_ROOT=$ROOT_DIR/SIM
+export XILINX_IP=$HW_IMPLE/xilinx_ip_xci
+export XSIM_DIR=$ROOT_DIR/xsim
+export ARTIFACTS=$ROOT_DIR/Artifacts
+export AE_SCRIPTS=$ROOT_DIR/AE_scripts
+
+export PYTHON="/home/ae/.ae_env/bin/python"
+
+# ---- bitstream generation (edit VIVADO / FPGA_PART for your machine) ----
+export VIVADO="${VIVADO:-vivado}"
+export FPGA_PART="${FPGA_PART:-xc7v2000tfhg1761-2}"
+export IMPL_JOBS="${IMPL_JOBS:-2}"
+export NETLIST_DIR=$HW_IMPLE/netlist
+export OUTPUT_DIR=$HW_IMPLE/output
+export HW_LOG_DIR=$HW_IMPLE/logs
+export IMPL_TCL=$HW_IMPLE/scripts/impl_variant.tcl
+
+if [[ -x /usr/local/sbin/fpl_ae_hw ]]; then
+    export FPL_AE_PRIV="${FPL_AE_PRIV:-/usr/local/sbin/fpl_ae_hw}"
+else
+    export FPL_AE_PRIV="${FPL_AE_PRIV:-$HW_IMPLE/ae_hw_priv.sh}"
+fi
+
+#Evaluated Model OPs
+export VGG11_CIFAR10_OPs="2.43GOP"
+export ResNet18_CIFAR10_OPs="2.47GOP"
+export ST4_CIFAR10_OPs="2.43GOP"
+export ST2_CIFAR100_OPs="9.08GOP"
+export SEG_NET_OPs="0.07549GOP"

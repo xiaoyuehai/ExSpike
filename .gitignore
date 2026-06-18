@@ -1,0 +1,21 @@
+# logs
+*.jou
+*.rpt
+
+# simulation
+xsim.dir/
+work/
+
+# Python
+__pycache__/
+*.pyc
+
+# Other
+*.vm
+*.edf
+*.saif
+*.bit
+xilinx_ip_xci/
+Evaluation/
+SIM/
+cycle_model/

@@ -1,0 +1,5 @@
+Resource,EPE Core,Attention Core,EAFC Core,Sparse Core,Total
+kLUTs,18 / 23,6,3,4,36 / 41
+kFFs,20 / 25,4,1,2,35 / 40
+BRAMs,128,0,2.5,0,312
+Power (W),1.593 / 1.674,,,,

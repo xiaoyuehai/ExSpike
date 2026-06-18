@@ -1,0 +1,19 @@
+###==== BEGIN Header
+
+# Synopsys, Inc. constraint file
+# C:\Full_Event_Computing\FPL_AE\ip\constraints\clk_cons.fdc
+# Written on Thu Jun  4 15:06:44 2026
+# by Synplify (R) Premier, Q-2020.03 FDC Constraint Editor
+
+# Custom constraint commands may be added outside of the SCOPE tab sections bounded with BEGIN/END.
+# These sections are generated from SCOPE spreadsheet tabs.
+
+###==== END Header
+create_clock -period 5 -name sysCLK [get_nets ui_clk]
+
+
+###==== BEGIN Clocks - (Populated from tab in SCOPE, do not edit)
+
+###==== END Clocks
+
+

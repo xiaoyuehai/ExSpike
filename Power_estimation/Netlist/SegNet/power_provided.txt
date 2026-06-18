@@ -1,0 +1,229 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date             : Mon Jun  8 16:28:15 2026
+| Host             : hstx running 64-bit major release  (build 9200)
+| Command          : report_power -file C:/Full_Event_Computing/FPL_AE/syn/Power_Netlist/SegNet/power_provided.txt -name power_5
+| Design           : EVENT_PROCESSOR_TOP
+| Device           : xc7v2000tfhg1761-2
+| Design State     : synthesized
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-----------------------------------------------------------------------------------+
+| Total On-Chip Power (W)  | 2.173                                                                             |
+| Design Power Budget (W)  | Unspecified*                                                                      |
+| Power Budget Margin (W)  | NA                                                                                |
+| Dynamic (W)              | 1.489                                                                             |
+| Device Static (W)        | 0.684                                                                             |
+| Effective TJA (C/W)      | 1.1                                                                               |
+| Max Ambient (C)          | 82.6                                                                              |
+| Junction Temperature (C) | 27.4                                                                              |
+| Confidence Level         | High                                                                              |
+| Setting File             | ---                                                                               |
+| Simulation Activity File | C:/Full_Event_Computing/FPL_AE/syn/Power_Netlist/SegNet/exspike_apec2_segnet.saif |
+| Design Nets Matched      | 94%   (110978/117939)                                                             |
++--------------------------+-----------------------------------------------------------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.380 |        3 |       --- |             --- |
+| Slice Logic              |     0.102 |    97062 |       --- |             --- |
+|   LUT as Logic           |     0.093 |    43023 |   1221600 |            3.52 |
+|   CARRY4                 |     0.007 |     3097 |    305400 |            1.01 |
+|   Register               |     0.002 |    44012 |   2443200 |            1.80 |
+|   LUT as Distributed RAM |    <0.001 |       20 |    344800 |           <0.01 |
+|   BUFG                   |    <0.001 |        1 |       128 |            0.78 |
+|   LUT as Shift Register  |    <0.001 |        4 |    344800 |           <0.01 |
+|   Others                 |     0.000 |     1225 |       --- |             --- |
+| Signals                  |     0.136 |    92354 |       --- |             --- |
+| Block RAM                |     0.871 |      310 |      1292 |           23.99 |
+| I/O                      |    <0.001 |      365 |       850 |           42.94 |
+| Static Power             |     0.684 |          |           |                 |
+| Total                    |     2.173 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     1.778 |       1.435 |      0.343 |
+| Vccaux    |       1.800 |     0.100 |       0.000 |      0.100 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.069 |       0.054 |      0.015 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| MGTZVccl  |       1.075 |     0.000 |       0.000 |      0.000 |
+| MGTZAVcc  |       1.075 |     0.000 |       0.000 |      0.000 |
+| MGTZVcch  |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.080 |       0.000 |      0.080 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+------------------------------------------------+-----------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                        | Action                                                                      |
++-----------------------------+------------+------------------------------------------------+-----------------------------------------------------------------------------+
+| Design implementation state | Low        | Design is synthesized                          | Accuracy of the tool is not optimal until design is fully placed and routed |
+| Clock nodes activity        | High       | User specified more than 95% of clocks         |                                                                             |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                             |
+| Internal nodes activity     | High       | User specified more than 25% of internal nodes |                                                                             |
+| Device models               | High       | Device models are Production                   |                                                                             |
+|                             |            |                                                |                                                                             |
+| Overall confidence level    | High       |                                                |                                                                             |
++-----------------------------+------------+------------------------------------------------+-----------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.1                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------+--------+-----------------+
+| Clock  | Domain | Constraint (ns) |
++--------+--------+-----------------+
+| sysCLK | clk    |             5.0 |
++--------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------------------------------+-----------+
+| Name                                     | Power (W) |
++------------------------------------------+-----------+
+| EVENT_PROCESSOR_TOP                      |     1.489 |
+|   U_FETCHER_DECODER                      |     0.001 |
+|   U_NEURAL_PROC                          |     1.480 |
+|     U_DDR_READ_CTRL_OPT                  |     0.428 |
+|     U_READ_MEMBRANE_P                    |     0.306 |
+|       U_MP_MEM                           |     0.229 |
+|     U_READ_MP_BIAS                       |     0.051 |
+|     U_SPARSE_PROCESSING                  |     0.050 |
+|       U_FIFO                             |     0.009 |
+|       U_TOP_FAST_FILTER                  |     0.015 |
+|     U_SPIKE_SIM                          |     0.064 |
+|       RESIDUAL_MAP                       |     0.013 |
+|       U_INPUT_MAP_T0                     |     0.013 |
+|       genblk3[0].u_GENERATE_VLF_FINAL    |     0.005 |
+|     U_WEIGHT_TOP                         |     0.574 |
+|       U_AIM_RANGE_GENENRATE              |     0.003 |
+|       genblk1.U_CODER_WEIGHT_MEM         |     0.247 |
+|       genblk2[0].genblk1[0].U_WEIGHT_ACC |     0.012 |
+|       genblk2[0].genblk1[1].U_WEIGHT_ACC |     0.011 |
+|       genblk2[0].genblk1[2].U_WEIGHT_ACC |     0.001 |
+|       genblk2[0].genblk1[3].U_WEIGHT_ACC |     0.001 |
+|       genblk2[0].genblk1[4].U_WEIGHT_ACC |     0.001 |
+|       genblk2[0].genblk1[5].U_WEIGHT_ACC |     0.001 |
+|       genblk2[0].genblk1[6].U_WEIGHT_ACC |     0.001 |
+|       genblk2[0].genblk1[7].U_WEIGHT_ACC |     0.001 |
+|       genblk2[0].genblk1[8].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[1].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[2].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[3].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[4].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[5].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[6].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[7].U_WEIGHT_ACC |     0.001 |
+|       genblk2[1].genblk1[8].U_WEIGHT_ACC |     0.001 |
+|       genblk2[2].genblk1[0].U_WEIGHT_ACC |     0.001 |
+|       genblk2[2].genblk1[1].U_WEIGHT_ACC |     0.001 |
+|       genblk2[2].genblk1[4].U_WEIGHT_ACC |     0.001 |
+|       genblk2[2].genblk1[5].U_WEIGHT_ACC |     0.001 |
+|       genblk2[2].genblk1[6].U_WEIGHT_ACC |     0.001 |
+|       genblk2[2].genblk1[7].U_WEIGHT_ACC |     0.001 |
+|       genblk2[2].genblk1[8].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[1].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[2].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[3].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[4].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[5].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[6].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[7].U_WEIGHT_ACC |     0.001 |
+|       genblk2[3].genblk1[8].U_WEIGHT_ACC |     0.001 |
+|       genblk2[4].genblk1[0].U_WEIGHT_ACC |     0.001 |
+|       genblk2[4].genblk1[2].U_WEIGHT_ACC |     0.001 |
+|       genblk2[4].genblk1[3].U_WEIGHT_ACC |     0.001 |
+|       genblk2[4].genblk1[7].U_WEIGHT_ACC |     0.001 |
+|       genblk2[4].genblk1[8].U_WEIGHT_ACC |     0.001 |
+|       genblk2[5].genblk1[1].U_WEIGHT_ACC |     0.001 |
+|       genblk2[5].genblk1[2].U_WEIGHT_ACC |     0.001 |
+|       genblk2[5].genblk1[4].U_WEIGHT_ACC |     0.001 |
+|       genblk2[5].genblk1[6].U_WEIGHT_ACC |     0.001 |
+|       genblk2[6].genblk1[0].U_WEIGHT_ACC |     0.001 |
+|       genblk2[6].genblk1[2].U_WEIGHT_ACC |     0.001 |
+|       genblk2[6].genblk1[3].U_WEIGHT_ACC |     0.001 |
+|       genblk2[6].genblk1[6].U_WEIGHT_ACC |     0.001 |
+|       genblk2[6].genblk1[7].U_WEIGHT_ACC |     0.001 |
+|       genblk2[6].genblk1[8].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[0].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[1].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[2].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[3].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[4].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[6].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[7].U_WEIGHT_ACC |     0.001 |
+|       genblk2[7].genblk1[8].U_WEIGHT_ACC |     0.001 |
+|       u_ELASTIC_FIFO                     |     0.124 |
+|     genblk1.U_FC_CORE                    |     0.005 |
+|       U_TOP_FAST_FILTER                  |     0.004 |
+|   U_UART_COMBINE_CONTROLLER              |     0.005 |
++------------------------------------------+-----------+
+
+
