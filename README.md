@@ -24,7 +24,7 @@ ExSpike 🔥🔥🔥
     README.md     // AE guidelines
 ```
 
-# 🚀🚀🚀 Evaluation Steps
+# 🚀 Evaluation Steps
 
 ```
 1. Preparation of the Python environment
