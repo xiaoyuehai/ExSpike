@@ -7,7 +7,7 @@
 > Additional files and source data are available on Zenodo: https://zenodo.org/records/20600138
 
 # 📖 Repository Introduction
-
+![](ExSpike_Arch.png)
 ```
 ExSpike 🔥
     --AE_scripts  // automated scripts for artifact generation
