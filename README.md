@@ -9,7 +9,7 @@
 # 📖 Repository Introduction
 
 <p align="center">
-  <img src="ExSpike_Arch.png" width="90%">
+  <img src="ExSpike_Arch.png" width="60%">
 </p>
 
 ```
