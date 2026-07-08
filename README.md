@@ -69,12 +69,12 @@ ExSpike 🔥
 # Citation
 In case you decide to use the ExSpike HDL source code for academic or commercial use, we would appreciate if you let us know; **feedback is welcome**. Upon usage of the source code, please cite the associated paper (also available [here](https://arxiv.org/abs/2606.20414)):
 
->
+```
 @article{chen2026exspike,
   title={ExSpike: A General Full-Event Neuromorphic Architecture for Exploiting Irregular Sparsity with Event Compression},
   author={Chen, Yuehai and Merchant, Farhad},
   journal={arXiv preprint arXiv:2606.20414},
   year={2026}
 }
-
+```
 
