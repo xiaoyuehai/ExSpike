@@ -1,4 +1,4 @@
-# ExSpike: A General Full-Event Neuromorphic Architecture for Exploiting Irregular Sparsity with Event Compression (FPL 2026)
+## ExSpike: A General Full-Event Neuromorphic Architecture for Exploiting Irregular Sparsity with Event Compression (FPL 2026)
 
 > Copyright (C) 2025–2026, University of Groningen, the Netherlands.
 
@@ -6,7 +6,7 @@
 
 > Additional files and source data are available on Zenodo: https://zenodo.org/records/20600138
 
-# 📖 Repository Introduction
+## 📖 Repository Introduction
 
 <p align="center">
   <img src="ExSpike_Arch.png" width="66%">
@@ -28,7 +28,7 @@ ExSpike 🔥
     README.md     // AE guidelines
 ```
 
-# 🚀 Evaluation Steps
+## 🚀 Evaluation Steps
 
 ```
 1. Preparation of the Python environment
@@ -66,7 +66,7 @@ ExSpike 🔥
     ./AE_scripts/run_ae_table2.sh
 ```
 
-# Citation
+## Citation
 In case you decide to use the ExSpike HDL source code for academic or commercial use, we would appreciate if you let us know; **feedback is welcome**. Upon usage of the source code, please cite the associated paper (also available [here](https://arxiv.org/abs/2606.20414)):
 
 ```
